@@ -26,9 +26,11 @@ body{
 }
 
 h1{
+	font-family: 'Permanent Marker', cursive;
 	text-align: center;
-	font-size: 35px;
+	font-size: 50px;
 	color: white;
+	letter-spacing: 8px;
 }
 
 span{
@@ -37,9 +39,8 @@ span{
 
 @media screen and (max-width: 450px){
 	
-	}
 	.beat{
-		margin: 15px;
+		margin: 25px;
 		height: 55px;
 		width: 55px;
 
