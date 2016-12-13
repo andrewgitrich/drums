@@ -1,4 +1,9 @@
-
+body{
+	background-image: url("drum.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
+}
 .container .beat{
 	display: inline-block;
 	}
@@ -17,14 +22,19 @@
 	font-size: 1rem;
 	background-color: black;
 	color: white;
+	opacity: .9;
 }
 
-header{
+h1{
 	text-align: center;
 	font-size: 35px;
+	color: white;
 }
 
-
+span{
+	font-size: 12px;
+	
+}
 
 @media screen and (max-width: 450px){
 	
