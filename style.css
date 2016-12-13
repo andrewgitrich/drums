@@ -1,5 +1,5 @@
 
-.container .set{
+.container .beat{
 	display: inline-block;
 	}
 
@@ -8,7 +8,7 @@
 	margin-top: 100px;
 }
 
-button{
+.beat{
 	height: 75px;
 	width: 75px;
 	margin: 15px;
@@ -29,7 +29,7 @@ header{
 @media screen and (max-width: 450px){
 	
 	}
-	button{
+	.beat{
 		margin: 15px;
 		height: 55px;
 		width: 55px;

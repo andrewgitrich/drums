@@ -1,19 +1,31 @@
 
 
 window.addEventListener("keydown", function(e){
-	  var audio = document.querySelector("audio[data-key=\"" + e.keyCode + "\"]");
-console.log(e.keyCode);
-	if(!audio) return; //stops function if from running
-	audio.currentTime = 0; //rewinds tp the start
+	var audio = document.querySelector("audio[data-key=\"" + e.keyCode + "\"]");
+	//stops function if from running
+	if(!audio) return; 
+	//rewinds tp the start
+	audio.currentTime = 0; 
 	audio.play();
 
 });
 
-window.addEventListener("onClick", function(e){
-	var x = $("button[data-key=\"" + e + "\"]").click();
 
-	x.currentTime = 0;
-	x.play();
 
-});
 
+
+
+var button = document.querySelectorAll("button");
+
+//create an event listener on all buttons
+for(var i = 0; i < button.length; i++){
+	button[i].addEventListener("click", function(){
+		var x =this.getAttribute("data-key")
+		console.log(x);
+		var audio = document.querySelector("audio[data-key=\"" + x + "\"]")
+	//rewinds tp the start
+	audio.currentTime = 0; 
+	audio.play();
+	})
+	
+}
